@@ -28,9 +28,9 @@ In the latter case, at the init of the script it would be necessary to specify t
 ## Results
 Both agents seem to learn with only 500 episodes, although PPO converges faster to better results.
 
-- __REINFORCE__:
+- __REINFORCE__:  
 ![Trained REINFORCE][image1]
-- __PPO__:
+- __PPO__:  
 ![Trained PPO][image2]
 
 ## Acknowledgements
