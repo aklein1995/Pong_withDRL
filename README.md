@@ -1,3 +1,3 @@
-# Pong_REINFORCE
+# Playing PONG
 
-Solving the PONG game using the REINFORCE algorithm.
+Solving the PONG game using REINFORCE and PPO algorithms
