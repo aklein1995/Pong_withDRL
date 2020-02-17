@@ -5,8 +5,20 @@
 
 Solving the PONG game using REINFORCE and PPO algorithms
 
+We would train our agent from raw pixels. In order to do that, we would use a neural network architecture composed of Convolutional and Linear layers, all of them sequantilly stacked. Moreover, to make the learning process easiear, the input frames are preprocessed reducing its dimensionality and the possible colors (changing it to grey scale).
+![image](https://user-images.githubusercontent.com/25618603/74650293-a6d79a00-5181-11ea-8152-fbaa14d8bef6.png)
+  
+The NN would only have one neuron, corresponding to take `RIGHT` action, whose probability would be calculated with a softmax function. The other possible actions, `LEFT` would be computed as 1-p(RIGHT).
+
 ## Getting Started
 The provided code is developed with Python 3 and PyTorch. Moreover, other packages such as numpy, matplotlib, gym and multiprocess are required.
+
+The easiest way to get started would be to import the conda environment that I have exported and uploaded to this repository.
+- __Linux, Ubuntu 18.04 LTS__:
+```bash
+conda env create -f drlnd_pong.yml
+```  
+If you use another OS or you have any issue during the process, follow the next steps.
 
 ### Dependencies
 To play PONG we are going to use the environment provided by OpenAI. Hence, we would have to download as:
